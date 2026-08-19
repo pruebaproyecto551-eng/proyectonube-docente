@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: portal-docente-mep
+    env: node
+    plan: free
+    buildCommand: npm install && npm --prefix backend run build && npm --prefix frontend run build
+    startCommand: node backend/dist/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://portal-docente-mep.onrender.com

@@ -1,0 +1,17 @@
+{
+  "name": "Portal Docente CINDEA MEP",
+  "short_name": "CINDEA Cloud",
+  "description": "Plataforma de Gestión Docente y Portal Estudiantil en la Nube - MEP CINDEA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
